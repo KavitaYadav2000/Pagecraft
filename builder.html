@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builder - Pagecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="builder.css">
+</head>
+
+<body>
+    <header class="bar">
+        <a href="index.html" class="logo"><span class="mark"></span>Pagecraft</a>
+        <div class="seg" role="group" aria-label="Preview size">
+            <button class="active" data-w="100%" title="Desktop">Desktop</button>
+            <button data-w="390px" title="Mobile">Mobile</button>
+        </div>
+        <div class="bar-actions">
+            <button class="btn ghost" id="reset">Reset</button>
+            <button class="btn dark" id="export">Export HTML</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="panel" id="panel">
+            <section>
+                <h3>Template</h3>
+                <div class="tpl-pick" id="tplPick"></div>
+            </section>
+
+            <section>
+                <h3>Content</h3>
+                <label>Site name<input id="title" type="text" maxlength="40"></label>
+                <label>Tagline<textarea id="tagline" rows="2" maxlength="120"></textarea></label>
+                <label>Button text<input id="cta" type="text" maxlength="24"></label>
+                <label>About text<textarea id="about" rows="4" maxlength="400"></textarea></label>
+                <label>Contact email<input id="email" type="email"></label>
+            </section>
+
+            <section>
+                <h3>Style</h3>
+                <label>Accent color
+                    <div class="color-row"><input id="accent" type="color"><span id="accentHex"></span></div>
+                </label>
+                <div class="swatches" id="swatches"></div>
+                <label>Font
+                    <select id="font"></select>
+                </label>
+                <label class="switch"><input id="dark" type="checkbox"><i></i>Dark mode</label>
+            </section>
+
+            <section>
+                <h3>Sections</h3>
+                <label class="switch"><input type="checkbox" data-sec="features"><i></i>Features</label>
+                <label class="switch"><input type="checkbox" data-sec="grid"><i></i>Gallery / Products</label>
+                <label class="switch"><input type="checkbox" data-sec="about"><i></i>About</label>
+                <label class="switch"><input type="checkbox" data-sec="contact"><i></i>Contact</label>
+            </section>
+        </aside>
+
+        <main class="stage">
+            <div class="viewport" id="viewport">
+                <iframe id="preview" title="Website preview"></iframe>
+            </div>
+        </main>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="templates.js"></script>
+    <script src="builder.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagecraft - Build a beautiful website in minutes</title>
+    <meta name="description" content="Pagecraft is a simple website builder. Pick a template, edit it live, and export your site as clean HTML.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="nav-wrap" id="top">
+        <nav class="nav container">
+            <a href="#top" class="logo"><span class="mark"></span>Pagecraft</a>
+            <ul class="links" id="links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#how">How it works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="builder.html" class="btn btn-dark">Start building</a>
+                <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero container">
+            <span class="badge reveal">New · Live editing, no code needed</span>
+            <h1 class="reveal">Build a website<br>that looks like <em>you.</em></h1>
+            <p class="sub reveal">Pick a template, change the words, colors and fonts, and watch your site update instantly. When you're happy, export clean HTML and publish anywhere.</p>
+            <div class="hero-cta reveal">
+                <a href="builder.html" class="btn btn-dark btn-lg">Start building free</a>
+                <a href="#templates" class="btn btn-ghost btn-lg">Browse templates</a>
+            </div>
+
+            <div class="browser reveal" id="heroBrowser">
+                <div class="browser-top"><i></i><i></i><i></i><span id="heroUrl">yoursite.com</span></div>
+                <div class="browser-view" id="heroView">
+                    <iframe id="heroFrame" title="Live template preview" tabindex="-1"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="section container">
+            <div class="head reveal">
+                <span class="eyebrow">Features</span>
+                <h2>Everything you need, nothing you don't</h2>
+            </div>
+            <div class="feat-grid">
+                <article class="feat reveal"><div class="ic">✎</div><h3>Live editing</h3><p>Type in the sidebar and your site changes right next to it. No refresh, no waiting.</p></article>
+                <article class="feat reveal"><div class="ic">▦</div><h3>Pro-looking templates</h3><p>Portfolio, agency, cafe and store layouts that look good before you change a single word.</p></article>
+                <article class="feat reveal"><div class="ic">▭</div><h3>Mobile preview</h3><p>Switch between desktop and phone views to be sure your site works on every screen.</p></article>
+                <article class="feat reveal"><div class="ic">◐</div><h3>Colors &amp; fonts</h3><p>Pick an accent color, a font and light or dark mode. The whole design adapts.</p></article>
+                <article class="feat reveal"><div class="ic">⇩</div><h3>Export clean HTML</h3><p>Download a single, fast HTML file. Host it on GitHub Pages, Netlify or any server.</p></article>
+                <article class="feat reveal"><div class="ic">⚡</div><h3>Auto-save</h3><p>Your work is saved in your browser as you go, so you can close the tab and come back.</p></article>
+            </div>
+        </section>
+
+        <!-- TEMPLATES -->
+        <section id="templates" class="section container">
+            <div class="head reveal">
+                <span class="eyebrow">Templates</span>
+                <h2>Start from a design you love</h2>
+                <p>Click a template to open it in the builder.</p>
+            </div>
+            <div class="tpl-grid" id="tplGrid"></div>
+        </section>
+
+        <!-- HOW -->
+        <section id="how" class="section container">
+            <div class="head reveal">
+                <span class="eyebrow">How it works</span>
+                <h2>From idea to website in three steps</h2>
+            </div>
+            <ol class="steps">
+                <li class="reveal"><b>1</b><h3>Choose a template</h3><p>Start with the layout closest to what you have in mind.</p></li>
+                <li class="reveal"><b>2</b><h3>Make it yours</h3><p>Edit text, pick colors and fonts, and turn sections on or off.</p></li>
+                <li class="reveal"><b>3</b><h3>Export &amp; publish</h3><p>Download your site as HTML and put it online anywhere you like.</p></li>
+            </ol>
+        </section>
+
+        <!-- PRICING -->
+        <section id="pricing" class="section container">
+            <div class="head reveal">
+                <span class="eyebrow">Pricing</span>
+                <h2>Simple plans</h2>
+                <p>Sample pricing. Change these to match your own plans.</p>
+            </div>
+            <div class="price-grid">
+                <article class="price reveal">
+                    <h3>Starter</h3>
+                    <div class="amt">₹0<small>/month</small></div>
+                    <ul><li>1 website</li><li>All 4 templates</li><li>HTML export</li></ul>
+                    <a href="builder.html" class="btn btn-ghost">Start free</a>
+                </article>
+                <article class="price featured reveal">
+                    <span class="pop">Most popular</span>
+                    <h3>Pro</h3>
+                    <div class="amt">₹499<small>/month</small></div>
+                    <ul><li>10 websites</li><li>Custom fonts &amp; colors</li><li>Priority support</li></ul>
+                    <a href="builder.html" class="btn btn-light">Choose Pro</a>
+                </article>
+                <article class="price reveal">
+                    <h3>Business</h3>
+                    <div class="amt">₹1,499<small>/month</small></div>
+                    <ul><li>Unlimited websites</li><li>Team access</li><li>Dedicated help</li></ul>
+                    <a href="builder.html" class="btn btn-ghost">Choose Business</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section container narrow">
+            <div class="head reveal">
+                <span class="eyebrow">FAQ</span>
+                <h2>Questions, answered</h2>
+            </div>
+            <details class="reveal"><summary>Do I need to know how to code?</summary><p>No. You edit everything from the sidebar. If you do know code, the exported HTML is simple to customize further.</p></details>
+            <details class="reveal"><summary>Where can I publish my website?</summary><p>Anywhere that hosts static files: GitHub Pages, Netlify, Vercel, or your own hosting. Upload the exported HTML file and you're live.</p></details>
+            <details class="reveal"><summary>Is my work saved?</summary><p>Yes. The builder auto-saves in your browser. Export your site to keep a permanent copy.</p></details>
+            <details class="reveal"><summary>Does it work on mobile?</summary><p>The sites you build are fully responsive, and you can preview the phone layout while you edit.</p></details>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band container reveal">
+            <h2>Ready to build yours?</h2>
+            <p>Open the builder and have your first page ready in minutes.</p>
+            <a href="builder.html" class="btn btn-light btn-lg">Start building free</a>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <a href="#top" class="logo"><span class="mark"></span>Pagecraft</a>
+        <p>© <span id="year"></span> Pagecraft. Made with HTML, CSS &amp; JS.</p>
+    </footer>
+
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
